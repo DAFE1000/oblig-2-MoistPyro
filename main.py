@@ -25,10 +25,10 @@ top_y = func(top_x)
 
 print(f"toppunkt: {top_x:.4f}, {top_y:.4f}")
 
-plt.axis([0, 5, 0, 1])
+plt.axis([0, 5, 0, 1]) #begrens plot til relevant området
 
 plt.plot(x_vals, y_vals)
-plt.plot(top_x, top_y, 'o')
+plt.plot(top_x, top_y, 'o') #toppunkt
 plt.text(top_x+0.1, top_y+0.01, f"Toppunkt: {top_x:.4f}, {top_y:.4f}")
 
 plt.grid(True, which='both') # bruk rutenett
